@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Encrypt/Decrypt</title>
+</head>
+<body>
+<h2>File Encrypt / Decrypt</h2>
+
+<input type="file" id="fileInput"><br><br>
+
+<button onclick="encrypt()">Encrypt (-1 shift)</button>
+<button onclick="decrypt()">Decrypt (+1 shift)</button>
+
+<script src="app.js"></script>
+
+<link rel="manifest" href="manifest.json">
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+  }
+</script>
+</body>
+</html>
